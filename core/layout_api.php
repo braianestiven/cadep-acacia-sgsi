@@ -1084,23 +1084,7 @@ function layout_footer() {
 		$t_version_suffix = ' ' . htmlentities( MANTIS_VERSION . config_get_global( 'version_suffix' ) );
 	}
 	echo '<div class="col-md-6 col-xs-12 no-padding">' . "\n";
-	echo '<address>' . "\n";
-	echo '<strong>Powered by <a href="https://www.mantisbt.org" title="bug tracking software">MantisBT ' . $t_version_suffix . '</a></strong> <br>' . "\n";
-	echo "<small>Copyright &copy;$t_copyright_years MantisBT Team</small>" . '<br>';
-
-	# Show optional user-specified custom copyright statement
-	$t_copyright_statement = config_get( 'copyright_statement' );
-	if( $t_copyright_statement ) {
-		echo '<small>' . $t_copyright_statement . '</small>' . "\n";
-	}
-
-	# Show contact information
-	if( !is_page_name( 'login_page' ) ) {
-		$t_webmaster_contact_information = sprintf( lang_get( 'webmaster_contact_information' ), string_html_specialchars( config_get( 'webmaster_email' ) ) );
-		echo '<small>' . $t_webmaster_contact_information . '</small>' . '<br>' . "\n";
-	}
-
-	echo '</address>' . "\n";
+	
 	echo '</div>' . "\n";
 
 
@@ -1112,7 +1096,7 @@ function layout_footer() {
 		$t_mantisbt_logo_url = helper_mantis_url( 'images/mantis_logo.png' );
 		echo '<a href="https://www.mantisbt.org" '.
 			'title="Mantis Bug Tracker: a free and open source web based bug tracking system.">' .
-			'<img src="' . $t_mantisbt_logo_url . '" width="102" height="35" ' .
+			'<img src="' . $t_mantisbt_logo_url . '" width="80" height="50" ' .
 			'alt="Powered by Mantis Bug Tracker: a free and open source web based bug tracking system." />' .
 			'</a>' . "\n";
 		echo '</div>' . "\n";
