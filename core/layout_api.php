@@ -1094,10 +1094,10 @@ function layout_footer() {
 		echo '<div class="col-md-6 col-xs-12">' . "\n";
 		echo '<div class="pull-right" id="powered-by-mantisbt-logo">' . "\n";
 		$t_mantisbt_logo_url = helper_mantis_url( 'images/mantis_logo.png' );
-		echo '<a href="https://www.mantisbt.org" '.
-			'title="Mantis Bug Tracker: a free and open source web based bug tracking system.">' .
+		echo '<a href="https://acacia.red/" '.
+			'title="Red CADEP Acacia.">' .
 			'<img src="' . $t_mantisbt_logo_url . '" width="80" height="50" ' .
-			'alt="Powered by Mantis Bug Tracker: a free and open source web based bug tracking system." />' .
+			'alt="Red CADEP Acacia." />' .
 			'</a>' . "\n";
 		echo '</div>' . "\n";
 		echo '</div>' . "\n";
