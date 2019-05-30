@@ -12114,7 +12114,6 @@ tr.detail-row > td {
 }
 .login-layout .widget-box {
     visibility: hidden;
-    position: fixed;
     z-index: -5;
     border-bottom: none;
     box-shadow: none;
@@ -12128,7 +12127,6 @@ tr.detail-row > td {
 }
 .login-layout .widget-box.visible {
     visibility: visible;
-    position: relative;
     z-index: auto;
     -moz-transform: scale(1,1) translate(0);
     -webkit-transform: scale(1,1) translate(0);
@@ -12142,7 +12140,7 @@ tr.detail-row > td {
 }
 .login-layout .widget-box .widget-main {
     padding: 16px 36px 36px;
-    background: #F7F7F7;
+    background: #FFF;
 }
 .login-layout .widget-box .widget-main form {
     margin: 0;

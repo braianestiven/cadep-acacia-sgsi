@@ -99,6 +99,7 @@ layout_login_page_begin();
 		<div class="space-12 hidden-480"></div>
 		<?php layout_login_page_logo() ?>
 		<div class="space-24 hidden-480"></div>
+		<div class="text-center"><h3><strong>SGSI</strong> CADEP Acacia</h3></div>
 
 		<?php
 			if( $t_can_change_password ) {

@@ -66,6 +66,7 @@ $t_public_key = crypto_generate_uri_safe_nonce( 64 );
 	<div class="space-12 hidden-480"></div>
 	<?php layout_login_page_logo() ?>
 	<div class="space-24 hidden-480"></div>
+	<div class="text-center"><h3><strong>SGSI</strong> CADEP Acacia</h3></div>
 
 	<div class="position-relative">
 

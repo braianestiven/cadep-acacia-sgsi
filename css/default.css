@@ -102,7 +102,32 @@ td.print-overdue    { font-weight: bold; }
 }
 
 .login-logo {
-	text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.login-logo img {
+  max-width: 250px;
+}
+
+@media (max-width: 400px){
+  .login-logo img {
+    max-width: 150px;
+    margin: 10% 0;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 600px){
+  .login-logo img {
+    max-width: 200px;
+    margin: 5% 0;
+  }
+}
+
+@media(min-width: 601px){
+  .login-box-container .widget-body{
+    min-width: 450px;
+  }
 }
 
 /* strike-through resolved issues: #22492 */
@@ -157,4 +182,9 @@ table.filters td.category {
 
 .listjs-table .sort:hover {
 	text-decoration: underline;
+}
+
+.login-box-container{
+ display: flex;
+ justify-content: center;
 }

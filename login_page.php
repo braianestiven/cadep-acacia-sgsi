@@ -117,6 +117,7 @@ layout_login_page_begin();
 		<div class="space-12 hidden-480"></div>
 		<?php layout_login_page_logo() ?>
 		<div class="space-24 hidden-480"></div>
+		<div class="text-center"><h3><strong>SGSI</strong> CADEP Acacia</h3></div>
 <?php
 if( $f_error || $f_cookie_error ) {
 	echo '<div class="alert alert-danger">';
@@ -198,7 +199,7 @@ if( config_get_global( 'admin_checks' ) == ON ) {
 }
 ?>
 
-<div class="position-relative">
+<div class="login-box-container">
 	<div class="signup-box visible widget-box no-border" id="login-box">
 		<div class="widget-body">
 			<div class="widget-main">
